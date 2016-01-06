@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <ImageView
+        android:id="@+id/iv_headtitle"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/find_titlepic_text_bg" />
+
+    <ImageView
+        android:id="@+id/iv_mincard"
+        android:layout_width="70dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#ffffff"
+        android:padding="1dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv_head_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="33dp"
+        android:paddingLeft="15dp"
+        android:layout_toRightOf="@id/iv_mincard"
+        android:text="死神来了"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_head_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:layout_toRightOf="@id/iv_mincard"
+        android:singleLine="true"
+        android:text="死神来了"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</RelativeLayout>

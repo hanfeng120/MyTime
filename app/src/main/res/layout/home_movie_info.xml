@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fcf="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pager_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="440dp"
+    android:background="#888"
+    android:clipChildren="false">
+
+    <ImageView
+        android:id="@+id/home_top_movie_background"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/home_top_movie_background_height"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/home_top_movie_background_cover"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/home_top_movie_background_height"
+        android:background="#33000000"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/home_top_movie_background_height"
+        android:background="#4c000000"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop" />
+
+    <include
+        android:id="@+id/in_home_movie_info"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/home_movienum_layout" />
+
+    <at.technikum.mti.fancycoverflow.FancyCoverFlow
+        android:id="@+id/gallery_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_above="@id/in_home_movie_info"
+
+        />
+
+</RelativeLayout>

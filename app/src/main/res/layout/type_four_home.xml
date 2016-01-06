@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="@dimen/view_elevtion_normal"
+        android:paddingBottom="3dp"
+        >
+
+        <ImageView
+            android:id="@+id/iv_home_four"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_home_four_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_home_four"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/iv_home_four_actor"
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_home_four_title"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_home_four_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_home_four_title"
+            android:layout_toLeftOf="@id/iv_home_four_actor"
+            android:paddingBottom="8dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:textColor="#777"
+            android:textSize="14dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/tv_home_four_subtitle"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@id/iv_home_four_actor"
+            android:background="@color/color_segment_thin" />
+
+        <TextView
+            android:id="@+id/tv_home_four_actor_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_home_four_actor"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/iv_home_four_actor"
+            android:textColor="#777"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/tv_home_four_actor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_home_four_actor_en"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/iv_home_four_actor"
+            android:textSize="14dp" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/segment_block_home" />
+
+</LinearLayout>

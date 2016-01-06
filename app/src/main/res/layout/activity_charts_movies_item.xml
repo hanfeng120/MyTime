@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/iv_chartsmovies_item_num"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/topmovie_list_num1"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tv_chartsmovies_item_photo"
+                android:layout_width="100dp"
+                android:layout_height="140dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingLeft="10dp">
+
+                <LinearLayout
+                    android:id="@+id/chartsmovies_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_chartsmovies_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:text="我的母亲" />
+
+                    <TextView
+                        android:id="@+id/tv_chartsmovies_item_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#669E0E" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_chartsmovies_item_nameEn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chartsmovies_title"
+                    android:paddingTop="10dp"
+                    android:text="Mia madre"
+                    android:textColor="#60000000" />
+
+                <TextView
+                    android:id="@+id/tv_chartsmovies_item_director"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_chartsmovies_item_nameEn"
+                    android:paddingTop="15dp"
+                    android:singleLine="true"
+                    android:text="导演：南尼·莫莱蒂" />
+
+                <TextView
+                    android:id="@+id/tv_chartsmovies_item_actor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_chartsmovies_item_director"
+                    android:singleLine="true"
+                    android:text="主演：马吉莉塔·贝" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_chartsmovies_item_actor"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_chartsmovies_item_releaseDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="2015年4月16日" />
+
+                    <TextView
+                        android:id="@+id/tv_chartsmovies_item_releaseLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="意大利" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="#10000000"
+            android:text="《儿子的房间》意大利导演南尼·莫莱蒂自编自导自演的新片，入围戛纳电影节荣获天主教人道精神奖。影片讲一个遇到创作瓶颈的女导演玛格丽塔(马吉莉塔·贝)，她一边要应对片场耍大牌的美国男演员(约翰·特托罗)，另一边还要面对患病的母亲和青春期的女儿。"
+            android:textColor="#65000000" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_movie_video_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:onClick="clickItem"
+        android:paddingBottom="@dimen/offset_pxtodx_24"
+        android:paddingLeft="@dimen/offset_pxtodx_34"
+        android:paddingRight="@dimen/offset_pxtodx_34"
+        android:paddingTop="@dimen/offset_pxtodx_24">
+
+        <TextView
+            android:id="@+id/tv_movie_video_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="#333333"
+            android:text="视频剧照"
+            android:textSize="@dimen/font_size_pxtosp_40" />
+
+        <ImageView
+            android:id="@+id/tv_home_zero_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:src="@mipmap/btn_gray_next" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:weightSum="7"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="12dp"
+        android:paddingTop="4dp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_movie_video_video"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginRight="8dp"
+            android:onClick="clickItem"
+            >
+
+            <TextView
+                android:id="@+id/tv_movie_video_video_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_movie_video_icon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tv_movie_video_video_num"
+                android:background="@mipmap/img_default_300x200" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/img_play"
+                android:layout_below="@id/tv_movie_video_video_num"
+                android:layout_centerInParent="true"
+                android:scaleType="centerInside"
+                />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#ebebeb"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_movie_video_img"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:onClick="clickItem"
+            >
+
+            <TextView
+                android:id="@+id/tv_movie_video_img_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:padding="2dp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_movie_video_img_icon"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@mipmap/img_default_90x90"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/segment_block_home" />
+
+</LinearLayout>

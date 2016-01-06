@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/tv_charts_persons_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="《人物》2015年全球十大性感男星"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_charts_persons_subhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="贝克汉姆登顶，也是该评选30周年的胜者"
+        android:textColor="#65000000"
+        android:textSize="14sp" />
+
+
+
+</LinearLayout>

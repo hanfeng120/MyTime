@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/iv_chartsperson_item_num"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/topmovie_list_num1"
+        android:gravity="center"
+        android:padding="5dp"
+        android:textSize="12dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/tv_chartsperson_item_photo"
+                android:layout_width="100dp"
+                android:layout_height="140dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingLeft="10dp">
+
+                <LinearLayout
+                    android:id="@+id/chartsperson_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_chartsperson_item_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="10dp"
+                        android:text="大卫·贝克汉姆" />
+
+                    <TextView
+                        android:id="@+id/tv_chartsperson_item_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#669E0E"
+                        android:text="8.9" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_chartsperson_item_nameEn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chartsmovies_title"
+                    android:paddingTop="25dp"
+                    android:text="David Beckham"
+                    android:textColor="#60000000" />
+
+                <TextView
+                    android:id="@+id/tv_chartsperson_item_sexanddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_chartsperson_item_nameEn"
+                    android:paddingTop="20dp"
+                    android:singleLine="true"
+                    android:text="男" />
+
+
+                <TextView
+                    android:id="@+id/tv_chartsperson_item_summary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_chartsperson_item_sexanddate"
+                    android:maxLines="2"
+                    android:paddingTop="8dp"
+                    android:text="著名足球运动员，前任英格兰代表队队长。
+                    《人物》周刊全球最性感男星TOP1" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

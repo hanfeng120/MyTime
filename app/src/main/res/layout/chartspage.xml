@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/listview_charts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null"
+        android:visibility="gone"
+        >
+
+    </ListView>
+
+    <com.atguigu.mtime.view.widget.LoadingView
+        android:id="@+id/loading_charts"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        >
+
+    </com.atguigu.mtime.view.widget.LoadingView>
+
+    <ImageView
+        android:id="@+id/iv_charts_load_failed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/loading_failed"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:paddingTop="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_discover_news_type2_bg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/gray_normal" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/img_play" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/iv_discover_news_type2_bg"
+        android:orientation="vertical">
+
+        <TextView
+
+            android:id="@+id/tv_discover_news_type2_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_discover_news_type2_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"
+            android:textSize="14dp"
+            android:textColor="@color/gray_normal"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/tv_discover_news_type2_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray_normal"
+                android:textSize="12dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_discover_news_type2_commentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/gray_normal"
+                android:textSize="12dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ebebeb"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

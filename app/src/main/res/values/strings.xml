@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">mTime</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_home_cart">购物车</string>
+    <string name="my_coupon">我的优惠券</string>
+    <string name="my_home_goods">商品订单</string>
+    <string name="my_home_tickets">电影票订单</string>
+    <string name="my_home_card">礼品卡</string>
+    <string name="str_my_movie">我的电影</string>
+    <string name="str_my_favour">我的收藏</string>
+    <string name="str_feedback">意见反馈</string>
+    <string name="str_setting">设置</string>
+    <string name="mine_scan">扫描二维码</string>
+    <string name="str_goods_help">商城使用帮助</string>
+    <string name="str_filmactivity_button_find">查影讯</string>
+    <string name="str_filmactivity_button_movieinfo">查影讯</string>
+    <string name="str_filmactivity_button_pay">查影讯/购票</string>
+    <string name="str_filmactivity_button_presell">超前预售</string>
+    <string name="str_filmactivity_button_remind">上映提醒</string>
+    <string name="str_filmactivity_button_vedio">预告片</string>
+    <string name="str_filmactivity_title_film_off">即将上映</string>
+    <string name="str_filmactivity_title_film_on">正在热映</string>
+    <string name="str_findback_password">找回密码</string>
+    <string name="str_forenotice_incoming">预告片</string>
+</resources>

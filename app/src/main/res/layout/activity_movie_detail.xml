@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.atguigu.mtime.activity.MovieDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/text_blue"
+        android:clickable="true">
+
+
+        <ImageView
+            android:id="@+id/iv_title_bar_normal_back"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/title_btn_back_background"
+            android:scaleType="centerInside"
+            android:onClick="clickItem"
+            />
+
+        <TextView
+            android:id="@+id/tv_title_bar_normal_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:maxEms="12"
+            android:singleLine="true"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/iv_title_bar_normal_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/title_bar_normal_share_margin_right"
+            android:onClick="clickItem"
+            android:background="@mipmap/title_bar_share"
+            android:contentDescription="@string/app_name" />
+
+        <ImageButton
+            android:id="@+id/iv_title_bar_normal_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickItem"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/title_bar_normal_favorite_margin_right"
+            android:layout_toLeftOf="@id/iv_title_bar_normal_share"
+            android:background="@mipmap/title_bar_favorite"
+            android:contentDescription="@string/app_name" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/sc_movie_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <include layout="@layout/layout_movie_video"
+                />
+
+            <include layout="@layout/layout_movie_comment"
+                />
+
+            <include layout="@layout/layout_movie_short_comment"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.atguigu.mtime.view.widget.LoadingView
+        android:id="@+id/loading_moviedetail"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_centerInParent="true"
+        >
+
+    </com.atguigu.mtime.view.widget.LoadingView>
+
+
+</RelativeLayout>

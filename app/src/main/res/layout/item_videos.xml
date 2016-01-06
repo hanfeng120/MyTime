@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:minHeight="110dp"
+    android:orientation="horizontal"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="15dp">
+
+
+    <ImageView
+        android:id="@+id/iv_video_act_photo"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/gray_normal" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@id/iv_video_act_photo"
+        android:layout_alignRight="@id/iv_video_act_photo"
+        android:layout_margin="5dp"
+        android:background="@mipmap/img_play" />
+
+
+    <TextView
+        android:id="@+id/tv_video_act_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/iv_video_act_photo"
+        android:text=" 最后的巫师猎人 中文预告"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/tv_video_act_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_video_act_title"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/iv_video_act_photo"
+        android:singleLine="true"
+        android:text="片长："
+        android:textColor="@color/gray_normal" />
+
+    <TextView
+        android:id="@+id/tv_video_act_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_video_act_title"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv_video_act_date"
+        android:singleLine="true"
+        android:text="1分22秒"
+        android:textColor="@color/gray_normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:background="#D9D9D9" />
+</RelativeLayout>
+
+

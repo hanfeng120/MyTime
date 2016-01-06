@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_home_title_bar_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/text_blue"
+        />
+
+    <TextView
+        android:id="@+id/tv_title_bar_city_select"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_bar_home_city_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/title_bar_home_city_margin_left"
+        android:clickable="true"
+        android:drawablePadding="@dimen/title_bar_home_city_drawable_padding"
+        android:drawableRight="@mipmap/city_select_array"
+        android:gravity="center"
+        android:paddingLeft="@dimen/title_bar_home_city_padding_left"
+        android:paddingRight="@dimen/title_bar_home_city_padding_right"
+        android:text="北京"
+        android:textColor="#fff"
+        android:textSize="14.0sp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/pic_logo_mtime" />
+
+    <ImageButton
+        android:id="@+id/iv_title_bar_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/title_bar_normal_share_margin_right"
+        android:background="@mipmap/title_search_icon"
+        android:contentDescription="@string/app_name" />
+
+    <ImageButton
+        android:id="@+id/iv_title_bar_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/title_bar_normal_favorite_margin_right"
+        android:layout_toLeftOf="@id/iv_title_bar_search"
+        android:background="@mipmap/mall_home_scan"
+        android:contentDescription="@string/app_name" />
+</RelativeLayout>

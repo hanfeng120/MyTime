@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/mall_category_img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minHeight="101.5dp"
+            android:minWidth="101.5dp" />
+
+        <TextView
+            android:id="@+id/mall_category_title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:lines="2"
+            android:text="大眼萌小黄人充电宝"
+            android:textColor="#ff333333"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mall_category_price1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="￥149.0"
+            android:textColor="#fff15353"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/mall_category_img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minHeight="101.5dp"
+            android:minWidth="101.5dp" />
+
+        <TextView
+            android:id="@+id/mall_category_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:lines="2"
+            android:text="大眼萌小黄人充电宝"
+            android:textColor="#ff333333"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mall_category_price2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="￥149.0"
+            android:textColor="#fff15353"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/mall_category_img3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minHeight="101.5dp"
+            android:minWidth="101.5dp" />
+
+        <TextView
+            android:id="@+id/mall_category_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:lines="2"
+            android:text="大眼萌小黄人充电宝"
+            android:textColor="#ff333333"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/mall_category_price3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="￥149.0"
+            android:textColor="#fff15353"
+            android:textSize="13sp" />
+    </LinearLayout>
+</LinearLayout>

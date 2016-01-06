@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorLine"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <RadioGroup
+            android:id="@+id/rg_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/colorTab"
+            >
+
+            <RadioButton
+                android:id="@+id/rb_main_home"
+                android:drawableTop="@drawable/tab_home_sel"
+                style="@style/TabTheme"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_main_ticket"
+                android:drawableTop="@drawable/tab_ticket_sel"
+                style="@style/TabTheme"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_main_mall"
+                android:drawableTop="@drawable/tab_mall_sel"
+                style="@style/TabTheme"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_main_discover"
+                android:drawableTop="@drawable/tab_find_sel"
+                style="@style/TabTheme"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_main_me"
+                android:drawableTop="@drawable/tab_me_sel"
+                style="@style/TabTheme"
+                />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="2dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_main_home"
+                android:text="首页"
+                style="@style/TabTextTheme"
+                />
+
+            <TextView
+                android:id="@+id/tv_main_ticket"
+                android:text="购票"
+                style="@style/TabTextTheme"
+                />
+
+            <TextView
+                android:id="@+id/tv_main_mall"
+                android:text="商城"
+                style="@style/TabTextTheme"
+                />
+
+            <TextView
+                android:id="@+id/tv_main_find"
+                android:text="发现"
+                style="@style/TabTextTheme"
+                />
+
+            <TextView
+                android:id="@+id/tv_main_me"
+                android:text="我"
+                style="@style/TabTextTheme"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

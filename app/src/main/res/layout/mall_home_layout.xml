@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/mall_home_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        >
+
+
+        <include
+            android:id="@+id/loading_failed_layout"
+            layout="@layout/loading_failed_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <com.atguigu.mtime.view.ObservableScrollView
+            android:id="@+id/mall_home_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/mall_home_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp">
+
+                    </android.support.v4.view.ViewPager>
+                    <LinearLayout
+                        android:id="@+id/ly_mall_points"
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="15dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center_horizontal"
+                        android:layout_height="match_parent">
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+                <include
+                    layout="@layout/mall_home_scrollimg_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <include
+                    layout="@layout/mall_home_titleicon_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp" />
+
+
+                <ImageView
+                    android:id="@+id/page_home_mallenter_seperated"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/order_remind_seperated_region_background" />
+
+                <include
+                    android:id="@+id/mall_home_cell"
+                    layout="@layout/mall_home_cell_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <include
+                    layout="@layout/mall_home_topic_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.atguigu.mtime.view.ScrollListView
+                    android:id="@+id/lv_mall_home_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    >
+
+                </com.atguigu.mtime.view.ScrollListView>
+
+
+                <LinearLayout
+                    android:id="@+id/mall_home_category_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+
+                <include
+                    android:id="@+id/mall_home_recommend_layout"
+                    layout="@layout/mall_home_intrested"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </com.atguigu.mtime.view.ObservableScrollView>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/home_title"
+        layout="@layout/title_bar_mall_home"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/title_bar_height" />
+
+    <ImageView
+        android:id="@+id/gotop_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@mipmap/gotop"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_mall_load_failed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/loading_failed"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        />
+
+    <com.atguigu.mtime.view.widget.LoadingView
+        android:id="@+id/loading_mall"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        />
+
+</RelativeLayout>

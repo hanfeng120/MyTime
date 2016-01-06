@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    >
+
+    <ImageView
+        android:id="@+id/iv_home_lv_zero"
+        android:layout_width="125dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_home_lv_zero_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_home_lv_zero"
+        android:padding="2dp"
+        android:text="2015批片市场喜忧参半"
+        android:singleLine="true"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_home_lv_zero_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_home_lv_zero_title"
+        android:layout_toRightOf="@id/iv_home_lv_zero"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:text="美式动作片遭遇滑铁卢 动画崛起市场"
+        android:textColor="#777"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/tv_home_lv_zero_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_home_lv_zero"
+        android:layout_alignBottom="@id/iv_home_lv_zero"
+        android:padding="2dp"
+        android:text="47分钟前"
+        android:textColor="#777"
+        android:textSize="13dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/color_segment_thin"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

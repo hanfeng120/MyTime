@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="#ff0075c4"
+        />
+
+    <TextView
+        android:id="@+id/tv_ticket_bar_location"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:clickable="true"
+        android:drawablePadding="6dp"
+        android:drawableRight="@mipmap/city_select_array"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="北京"
+        android:textColor="#fff"
+        android:textSize="14.0sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/pic_logo_mtime"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="true"
+        android:background="@mipmap/title_bar_movie_cinema_switch_view_background"
+        android:visibility="visible" >
+
+        <ImageView
+            android:id="@+id/switch_center"
+            android:layout_width="1.0px"
+            android:layout_height="1.0px"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tv_ticket_bar_movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/switch_center"
+            android:background="@drawable/title_bar_home_ticket_movie_sel"
+            android:clickable="true"
+            android:gravity="center|right"
+            android:paddingRight="25dp"
+            android:text="电影"
+            android:enabled="false"
+            android:textColor="@drawable/title_bar_home_ticket_text_sel"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/tv_ticket_bar_cinema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/switch_center"
+            android:background="@drawable/title_bar_home_ticket_cinema_sel"
+            android:clickable="true"
+            android:gravity="center|left"
+            android:paddingLeft="25dp"
+            android:text="影院"
+            android:textColor="@drawable/title_bar_home_ticket_text_sel"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/iv_ticket_bar_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="17dp"
+        android:background="@mipmap/title_search_icon"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

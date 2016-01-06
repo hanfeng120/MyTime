@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@color/text_blue"
+    android:clickable="true">
+
+
+    <ImageView
+        android:id="@+id/iv_title_bar_normal_back"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/title_btn_back_background"
+        android:scaleType="centerInside"
+        />
+
+    <TextView
+        android:id="@+id/tv_title_bar_normal_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:maxEms="12"
+        android:singleLine="true"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <ImageButton
+        android:id="@+id/iv_title_bar_normal_share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/title_bar_normal_share_margin_right"
+        android:background="@mipmap/title_bar_share"
+        android:contentDescription="@string/app_name" />
+
+    <ImageButton
+        android:id="@+id/iv_title_bar_normal_favorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/title_bar_normal_favorite_margin_right"
+        android:layout_toLeftOf="@id/iv_title_bar_normal_share"
+        android:background="@mipmap/title_bar_favorite"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

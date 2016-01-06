@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mtime="http://schemas.android.com/apk/com.atguigu.mtime"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/colorLine"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0.9dp"
+            />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#f6f6f6"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <com.atguigu.mtime.view.widget.SubTabView
+                android:id="@+id/st_movie_showing"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                mtime:title="正在热映"
+                mtime:checked="true"
+                />
+
+            <com.atguigu.mtime.view.widget.SubTabView
+                android:id="@+id/st_movie_sooning"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                mtime:title="即将上映"
+                mtime:checked="false"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_fragment_movie"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
